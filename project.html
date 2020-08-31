@@ -17,7 +17,7 @@ input[type=text], input[type=password] {
 
 
 button {
-  background-color: #4CAF50;
+  background-color: #5e12da;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -38,16 +38,7 @@ button:hover {
 }
 
 
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
 
 .container {
   padding: 16px;
@@ -127,12 +118,7 @@ span.psw {
 </head>
 <body>
 
-<h2>Login</h2>
 
-<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-
-<div id="id01" class="modal">
-  
   <form class="modal-content animate" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
@@ -159,10 +145,10 @@ span.psw {
 </div>
 
 <script>
-// Get the modal
-var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
+
+
+
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
